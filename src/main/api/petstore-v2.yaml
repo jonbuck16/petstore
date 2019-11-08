@@ -295,12 +295,12 @@ paths:
   /store/inventory:
     get:
       tags:
-      - "store"
+        - "store"
       summary: "Returns pet inventories by status"
       description: "Returns a map of status codes to quantities"
       operationId: "getInventory"
       produces:
-      - "application/json"
+        - "application/json"
       parameters: []
       responses:
         200:
