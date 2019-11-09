@@ -292,23 +292,6 @@ paths:
       - petstore_auth:
         - "write:pets"
         - "read:pets"
-  /pets:
-    get:
-      summary: "Returns all pets in the store"
-      description: "Return all pets in the store regardless of state"
-      operationId: "getAllPets"
-      produces:
-        - application/json
-      parameters: []
-      responses:
-        200:
-          description: "successful operation"
-          schema:
-            type: "array"
-            items:
-              $ref: "#/definitions/Pet"
-        404:
-          description: "No Pets found"
   /store/inventory:
     get:
       tags:
